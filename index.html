@@ -25,52 +25,6 @@
             margin-top: 125px;
         }
 
-        .hero-image-with-texts {
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 960px, rgba(0, 0, 0, 0.5) 960px), url("../images/background-image.png");
-            height: 925px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-        }
-
-        .hero-text {
-            margin: 550px -210px 10px 1440px;
-            text-align: right;
-            position: absolute;
-            transform: translate(-50%, -50%);
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-        }
-
-        .hero-text h1 {
-            text-transform: uppercase;
-            font-size: 42px;
-            color: white;
-        }
-
-        .hero-text p {
-            font-size: 24px;
-            color: white;
-        }
-
-        .hero-text button {
-            border: none;
-            border-radius: 15px;
-            outline: 0;
-            display: inline-block;
-            padding: 10px 25px;
-            color: black;
-            background-color: #42b349;
-            font-size: large;
-            text-align: center;
-            cursor: pointer;
-        }
-
-        .hero-text button:hover {
-            background-color: #307249;
-            color: white;
-        }
-
         .highlights {
             background-color: whitesmoke;
             margin: 10px 0px 10px 0px;
@@ -227,13 +181,71 @@
     </header>
     <main>
         <section class="hero-image-with-texts">
-            <div class="hero-text">
-                <h1>Welcome to R/Balangoda Ananda Maithreeya Central College</h1>
-                <p>Inspiring knowledge, discipline,and creativity for brighter future</p>
-                <button type="button">Discover More</button>
+            <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/carousel/balangoda-amcc-official.jpg" alt="ananda-maithreeya-central-college">
+                        <div class="container">
+                            <div class="carousel-caption text-start">
+                                <h1 class="fw-medium text-white">Inspiring Generations Through Education Since 1943.</h1>
+                                <p class="fs-4 fw-medium text-white">
+                                    Founded under the guidance of Ven. Balangoda Ananda Maithreeya Thero, our school
+                                    continues its proud legacy of nurturing wisdom, discipline, and compassion.
+                                </p>
+                                <p>
+                                    <a class="btn btn-lg btn-primary" href="#about-our-school">Discover more</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/carousel/carousel 2.jpg" alt="ananda-maithreeya-central-college">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1 class="fw-medium text-dark">Excellence in Learning and Character Building.</h1>
+                                <p class="fs-4 fw-medium text-dark">
+                                    Our dedicated teachers and vibrant students work together to create an environment
+                                    where academic success meets moral and social growth.
+                                </p>
+                                <p><a class="btn btn-lg btn-primary" href="#highlights">Learn more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/carousel/carousel 3.jpg" alt="ananda-maithreeya-central-college">
+                        <div class="container">
+                            <div class="carousel-caption text-end">
+                                <h1 class="fw-medium text-white">Discover the Spirit of School Life at AMCC.</h1>
+                                <p class="fs-4 fw-medium text-white">
+                                    Experience the joy of teamwork, talent, and tradition through our events,
+                                    performances, and achievements across the years.
+                                </p>
+                                <p>
+                                    <a class="btn btn-lg btn-primary" href="#our-gallery">Browse gallery</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
-        <section class="about-our-school" id="about">
+        <section class="about-our-school" id="about-our-school">
             <h2>About Our School</h2>
             <p>A legacy of learning and service since 1943</p>
             <div>
@@ -248,7 +260,7 @@
                 <button type="button" class="btn btn-primary align-self-center">Discover more</button>
             </div>
         </section>
-        <section class="highlights">
+        <section class="highlights" id="highlights">
             <h2>Highlights</h2>
             <p>Explore our academics, activities, and ways to connect with us.</p>
             <div class="cards">
@@ -284,7 +296,7 @@
                 </div>
             </div>
         </section>
-        <section class="founder-message">
+        <section class="founder-message" id="founder-message">
             <h2>A Message from Our Revered Founder</h2>
             <p>Honoring the vision and guidance of our founder, whose wisdom continues to inspire every generation of
                 learners.</p>
@@ -306,7 +318,7 @@
                 </div>
             </div>
         </section>
-        <section class="our-gallery">
+        <section class="our-gallery" id="our-gallery">
             <h2>Our Gallery</h2>
             <p>Discover the spirit of our school through these beautiful moments captured in learning, friendship, and
                 celebration.</p>
@@ -327,7 +339,7 @@
                 </div>
             </div>
         </section>
-        <section class="news-and-events">
+        <section class="news-and-events" id="news-and-events">
             <h2>News & Events</h2>
             <p>Discover our latest news, events, and activities — keeping our community connected and inspired.</p>
             <div class="row">
@@ -336,44 +348,45 @@
                         style="border: 5px solid #f1f1f1; width: 50%;">
                     <h2 class="fw-normal">Annual Sports Meet'25</h2>
                     <h5 class="fw-light">October 15, 2025</h3>
-                    <p>
-                        Our Annual Sports Meet 2025 will be held on the school grounds with colorful ceremonies,
-                        track events, and team competitions. Students from all grades are encouraged to participate
-                        and cheer on their houses!
-                    </p>
-                    <p>
-                        <a class="btn btn-secondary" href="#">View details &raquo;</a>
-                    </p>
+                        <p>
+                            Our Annual Sports Meet 2025 will be held on the school grounds with colorful ceremonies,
+                            track events, and team competitions. Students from all grades are encouraged to participate
+                            and cheer on their houses!
+                        </p>
+                        <p>
+                            <a class="btn btn-secondary" href="#">View details &raquo;</a>
+                        </p>
                 </div>
                 <div class="col-lg-4">
                     <img src="images/gallery/memory4.png" alt="TURNING-THE-PAGE"
                         style="border: 5px solid #f1f1f1; width: 50%;">
                     <h2 class="fw-normal">Students Shine in National Science Competition</h2>
                     <h5 class="fw-light">September 10, 2025</h3>
-                    <p>
-                        Three talented students from AMCC achieved top positions at the National Science Competition
-                        held in Colombo, showcasing innovation and teamwork at its best.
-                    </p>
-                    <p>
-                        <a class="btn btn-secondary" href="#">View details &raquo;</a>
-                    </p>
+                        <p>
+                            Three talented students from AMCC achieved top positions at the National Science Competition
+                            held in Colombo, showcasing innovation and teamwork at its best.
+                        </p>
+                        <p>
+                            <a class="btn btn-secondary" href="#">View details &raquo;</a>
+                        </p>
                 </div>
                 <div class="col-lg-4">
                     <img src="images/gallery/memory4.png" alt="TURNING-THE-PAGE"
                         style="border: 5px solid #f1f1f1; width: 50%;">
                     <h2 class="fw-normal">Cultural Day Celebrations</h2>
                     <h5 class="fw-light">August 28, 2025</h3>
-                    <p>
-                        Our annual Cultural Day brought together music, dance, and drama performances that celebrated
-                        the rich diversity of Sri Lankan culture and traditions.
-                    </p>
-                    <p>
-                        <a class="btn btn-secondary" href="#">View details &raquo;</a>
-                    </p>
+                        <p>
+                            Our annual Cultural Day brought together music, dance, and drama performances that
+                            celebrated
+                            the rich diversity of Sri Lankan culture and traditions.
+                        </p>
+                        <p>
+                            <a class="btn btn-secondary" href="#">View details &raquo;</a>
+                        </p>
                 </div>
             </div>
         </section>
-        <section class="contact-us">
+        <section class="contact-us" id="contact-us">
             <h2>Get in Touch</h2>
             <p class="sub-heading">Whether you’re a student, parent, or visitor — we’re here to help.</p>
             <div class="row featurette">
