@@ -21,8 +21,66 @@
 
     <link href="features.css" rel="stylesheet" />
     <style>
+        .hero-image-with-texts-regarding-to-gallary {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("images/hero/background-gallary.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            min-height: 300px;
+            color: white;
+            padding: 20px;
+        }
+
+        .gallery-container h1 {
+            text-align: center;
+            margin-top: 70px;
+            font-family: 'Droid Sans', sans-serif;
+            font-weight: bold;
+        }
+
+        .gallery-container p.page-description {
+            text-align: center;
+            max-width: 800px;
+            margin: 25px auto;
+            color: #888;
+            font-size: 18px;
+        }
+
+        .tz-gallery {
+            padding: 40px;
+        }
+
+        .tz-gallery .lightbox img {
+            width: 100%;
+            margin-bottom: 30px;
+            transition: 0.2s ease-in-out;
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+        }
 
 
+        .tz-gallery .lightbox img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .tz-gallery img {
+            border-radius: 4px;
+        }
+
+        .baguetteBox-button {
+            background-color: transparent !important;
+        }
+
+
+        @media(max-width: 768px) {
+            body {
+                padding: 0;
+            }
+
+            .container.gallery-container {
+                border-radius: 0;
+            }
+        }
     </style>
 </head>
 
@@ -68,7 +126,82 @@
         </nav>
     </header>
     <main>
+        <section>
+            <div class="container-fluid py-1">
+                <div class="hero-image-with-texts-regarding-to-gallary mb-4 bg-body-tertiary rounded-4">
+                    <div class="container-fluid py-5">
+                        <h1 class="display-5 fw-bold">Moments That Inspire Excellence</h1>
+                        <p class="col-md-8 fs-4">
+                            Explore the vibrant life of Balangoda Ananda Maithreeya Central College through our gallery
+                            — celebrating learning, culture, sports, and the proud achievements of our students.
+                        </p>
+                        <a href="#">
+                            <button class="btn btn-primary btn-lg" type="button">
+                                View Highlights
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="album py-5 bg-body-tertiary">
+                    <div class="container">
+                        <div class="tz-gallery">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4 col-lg-12">
+                                    <a class="lightbox" href="images/gallery/memory4.png">
+                                        <img src="images/gallery/memory1.png" alt="Park">
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <a class="lightbox" href="images/gallery/memory4.png">
+                                        <img src="images/gallery/memory2.png" alt="Bridge">
+                                    </a>
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <a class="lightbox" href="images/gallery/memory4.png">
+                                        <img src="images/gallery/memory3.png" alt="Tunnel">
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <a class="lightbox" href="images/gallery/memory4.png">
+                                        <img src="images/gallery/memory4.png" alt="Coast">
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <a class="lightbox" href="images/gallery/memory4.png">
+                                        <img src="images/gallery/memory5.png" alt="Rails">
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <a class="lightbox" href="images/gallery/memory4.png">
+                                        <img src="images/gallery/memory4.png" alt="Traffic">
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <a class="lightbox" href="images/gallery/memory4.png">
+                                        <img src="images/gallery/memory2.png" alt="Rocks">
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <a class="lightbox" href="images/gallery/memory4.png">
+                                        <img src="images/gallery/memory1.png" alt="Sky">
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <a class="lightbox" href="images/gallery/memory4.png">
+                                        <img src="images/gallery/memory4.png" alt="Benches">
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <a class="lightbox" href="images/gallery/memory4.png">
+                                        <img src="images/gallery/memory5.png" alt="Sky">
+                                    </a>
+                                </div>
+                            </div>
 
+                        </div>
+
+                    </div>
+        </section>
     </main>
     <div class="container-fluid px-5">
         <footer class="py-5">
