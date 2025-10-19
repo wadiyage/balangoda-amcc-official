@@ -21,8 +21,39 @@
 
     <link href="features.css" rel="stylesheet" />
     <style>
-        main {
-            margin-top: 125px;
+        .about-our-school {
+            background-color: aliceblue;
+            margin: 10px 0px 10px 0px;
+            padding: 20px 30px 20px 30px;
+        }
+
+        .about-our-school h2 {
+            text-align: left;
+            font-size: 36px;
+            color: black;
+            text-transform: uppercase;
+            padding-top: 50px;
+        }
+
+        .about-our-school p {
+            text-align: left;
+            font-size: 24px;
+            color: black;
+            font-style: italic;
+            padding-bottom: 20px;
+        }
+
+        .about-our-school div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about-our-school div p {
+            text-align: center;
+            font-size: 24px;
+            color: black;
         }
 
         .highlights {
@@ -64,17 +95,13 @@
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
         }
 
-        .card-title {
-            font-size: 24px;
-        }
-
-        .about-our-school {
-            background-color: aliceblue;
+        .our-gallery {
+            background-color: whitesmoke;
             margin: 10px 0px 10px 0px;
             padding: 20px 30px 20px 30px;
         }
 
-        .about-our-school h2 {
+        .our-gallery h2 {
             text-align: left;
             font-size: 36px;
             color: black;
@@ -82,7 +109,61 @@
             padding-top: 50px;
         }
 
-        .about-our-school p {
+        .our-gallery p {
+            text-align: left;
+            font-size: 24px;
+            font-style: italic;
+            color: black;
+            padding-bottom: 20px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        .column {
+            flex: 20%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 800px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+        .founder-message {
+            background-color: aliceblue;
+            margin: 10px 0px 10px 0px;
+            padding: 20px 30px 20px 30px;
+        }
+
+        .founder-message h2 {
+            text-align: left;
+            font-size: 36px;
+            color: black;
+            text-transform: uppercase;
+            padding-top: 50px;
+        }
+
+        .founder-message p {
             text-align: left;
             font-size: 24px;
             color: black;
@@ -90,50 +171,86 @@
             padding-bottom: 20px;
         }
 
-        .about-our-school div {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        .founder-message .container img {
+            width: 210px;
+            height: 210px;
+            border-radius: 50%;
+            object-fit: cover;
         }
 
-        .about-our-school div p {
-            text-align: center;
-            font-size: 24px;
+        .founder-message .container p {
+            text-align: left;
+            font-size: 20px;
             color: black;
+            margin-left: 250px;
+            margin-top: -180px;
         }
 
-        .discover-more {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .signature-line {
+            line-height: 20px;
         }
 
-        .discover-more:hover {
-            background-color: #adc11d;
-            color: white;
+        .founder-message .container h4 {
+            text-align: left;
+            font-size: 18px;
+            color: black;
+            margin-left: 250px;
+            margin-top: 20px;
+            font-style: italic;
         }
 
-        .navbar-brand {
-            display: flex;
+        .founder-message .container h5 {
+            text-align: left;
+            font-size: 15px;
+            color: black;
+            margin-left: 250px;
+            margin-top: 20px;
+            font-style: italic;
+            font-weight: 500;
         }
 
-        .navbar-brand div {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: left;
+        .news-and-events {
+            background-color: aliceblue;
+            margin: 10px 0px 10px 0px;
+            padding: 20px 30px 20px 30px;
         }
 
-        .navbar-customized {
-            display: flex;
-            flex-direction: row;
-            align-content: center;
+        .news-and-events h2 {
+            text-align: left;
+            font-size: 36px;
+            color: black;
+            text-transform: uppercase;
+            padding-top: 50px;
         }
 
-        .feature-icon-small {
-            width: 3rem;
-            height: 3rem;
+        .news-and-events p {
+            text-align: left;
+            font-size: 24px;
+            font-style: italic;
+            color: black;
+            padding-bottom: 20px;
+        }
+
+        .contact-us {
+            background-color: aliceblue;
+            margin: 10px 0px 10px 0px;
+            padding: 20px 30px 20px 30px;
+        }
+
+        .contact-us h2 {
+            text-align: left;
+            font-size: 36px;
+            color: black;
+            text-transform: uppercase;
+            padding-top: 50px;
+        }
+
+        .contact-us .sub-heading {
+            text-align: left;
+            font-size: 24px;
+            font-style: italic;
+            color: black;
+            padding-bottom: 20px;
         }
     </style>
 </head>
@@ -142,7 +259,7 @@
     <header class="position-fixed top-0 z-1 w-100">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="images/logo.png" alt="ananda-maithreeya-central-college" width="90"
                         class="d-inline-block align-text-top">
                     <div>Ananda Maithreeya Central College
@@ -152,22 +269,22 @@
                 <div class="navbar-customized">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item px-2 fs-5">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item px-2 fs-5">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item px-2 fs-5">
-                            <a class="nav-link" href="#">Academic</a>
+                            <a class="nav-link" href="academic.html">Academic</a>
                         </li>
                         <li class="nav-item px-2 fs-5">
-                            <a class="nav-link" href="#">Gallery</a>
+                            <a class="nav-link" href="gallery.html">Gallery</a>
                         </li>
                         <li class="nav-item px-2 fs-5">
-                            <a class="nav-link" href="#">News & Events</a>
+                            <a class="nav-link" href="events.html">News & Events</a>
                         </li>
                         <li class="nav-item px-2 fs-5">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul> <!--
                     <form class="d-flex" role="search">
@@ -180,7 +297,7 @@
         </nav>
     </header>
     <main>
-        <section class="hero-image-with-texts">
+        <section>
             <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
@@ -195,7 +312,8 @@
                         <img src="images/carousel/balangoda-amcc-official.jpg" alt="ananda-maithreeya-central-college">
                         <div class="container">
                             <div class="carousel-caption text-start">
-                                <h1 class="fw-medium text-white">Inspiring Generations Through Education Since 1943.</h1>
+                                <h1 class="fw-medium text-white">Inspiring Generations Through Education Since 1943.
+                                </h1>
                                 <p class="fs-4 fw-medium text-white">
                                     Founded under the guidance of Ven. Balangoda Ananda Maithreeya Thero, our school
                                     continues its proud legacy of nurturing wisdom, discipline, and compassion.
@@ -257,7 +375,11 @@
                     yet
                     powerful beginning—built with dedication, simplicity, and a vision for education that continues to
                     inspire generations.</p>
-                <button type="button" class="btn btn-primary align-self-center">Discover more</button>
+                <a href="about.html">
+                    <button type="button" class="btn btn-primary align-self-center">
+                        Discover more
+                    </button>
+                </a>
             </div>
         </section>
         <section class="highlights" id="highlights">
@@ -267,7 +389,7 @@
                 <div class="card">
                     <img src="images/gallery/TURNING-THE-PAGE.png" class="card-img-top" alt="turning-the-page">
                     <div class="card-body">
-                        <h5 class="card-title">Academics</h5>
+                        <h5 class="card-title fs-3">Academics</h5>
                         <p class="card-text">Our academic programs are designed to inspire curiosity, encourage
                             creativity, and help every
                             student reach their full potential.</p>
@@ -277,7 +399,7 @@
                 <div class="card">
                     <img src="images/gallery/TURNING-THE-PAGE.png" class="card-img-top" alt="turning-the-page">
                     <div class="card-body">
-                        <h5 class="card-title">News & Events</h5>
+                        <h5 class="card-title fs-3">News & Events</h5>
                         <p class="card-text">Our academic programs are designed to inspire curiosity, encourage
                             creativity, and help every
                             student reach their full potential.</p>
@@ -287,7 +409,7 @@
                 <div class="card">
                     <img src="images/gallery/TURNING-THE-PAGE.png" class="card-img-top" alt="turning-the-page">
                     <div class="card-body">
-                        <h5 class="card-title">Join Us</h5>
+                        <h5 class="card-title fs-3">Join Us</h5>
                         <p class="card-text">Become part of our community and experience a school where tradition meets
                             innovation. Reach
                             out to learn more about admissions and programs.</p>
@@ -456,19 +578,19 @@
                 <div class="col-3 col-md-1 mb-3 me-5">
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+                            <a href="index.html" class="nav-link p-0 text-body-secondary">Home</a>
                         </li>
                         <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                            <a href="about.html" class="nav-link p-0 text-body-secondary">About</a>
                         </li>
                         <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-body-secondary">Academic</a>
+                            <a href="academic.html" class="nav-link p-0 text-body-secondary">Academic</a>
                         </li>
                         <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-body-secondary">News & Events</a>
+                            <a href="events.html" class="nav-link p-0 text-body-secondary">News & Events</a>
                         </li>
                         <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-body-secondary">Contact</a>
+                            <a href="contact.html" class="nav-link p-0 text-body-secondary">Contact</a>
                         </li>
                     </ul>
                 </div>
