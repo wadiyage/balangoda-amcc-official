@@ -21,8 +21,20 @@
 
     <link href="features.css" rel="stylesheet" />
     <style>
+        .hero-image-with-texts-regarding-to-academic-page {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("images/hero/background-academic.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            min-height: 300px;
+            color: white;
+            padding: 20px;
+        }
 
-
+        .feature-icon {
+            width: 5rem;
+            height: 5rem;
+        }
     </style>
 </head>
 
@@ -46,7 +58,7 @@
                             <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item px-2 fs-5">
-                            <a class="nav-link active"  aria-current="page" href="academic.html">Academic</a>
+                            <a class="nav-link active" aria-current="page" href="academic.html">Academic</a>
                         </li>
                         <li class="nav-item px-2 fs-5">
                             <a class="nav-link" href="gallery.html">Gallery</a>
@@ -68,7 +80,23 @@
         </nav>
     </header>
     <main>
-
+        <div class="container-fluid py-1">
+            <div class="hero-image-with-texts-regarding-to-academic-page mb-4 bg-body-tertiary rounded-4">
+                <div class="container-fluid py-5">
+                    <h1 class="display-5 fw-bold">Our Academic Excellence</h1>
+                    <p class="col-md-8 fs-4">
+                        At Balangoda <span class="fw-medium fst-italic">Ananda Maithreeya Central College</span>, we believe in nurturing creativity, discipline,
+                        and a lifelong love for learning. Our academic programs combine tradition with modern education
+                        to empower every student to achieve their fullest potential.
+                    </p>
+                    <a href="#">
+                        <button class="btn btn-primary btn-lg" type="button">
+                            Explore Our Subjects
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="container-fluid px-5 py-5">
         <div class="row">
